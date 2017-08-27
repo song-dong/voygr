@@ -25,12 +25,13 @@ class CreateMembersTable extends Migration
             $table->date('birthday');
             $table->integer('tel');
             $table->string('nation');
-            $table->string('lang');
-            $table->string('affiiation');
+            $table->integer('birthplace');           
+            $table->integer('lang');
+            $table->string('affiliation');
             $table->datetime('register');
             $table->datetime('last_login');
             $table->integer('admin_flg');
-            $table->integer('life_flg');
+            $table->boolean('life_flg');
             $table->integer('myPoint');
             $table->integer('myRank');
             $table->timestamps();

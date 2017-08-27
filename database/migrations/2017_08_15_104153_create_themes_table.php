@@ -22,7 +22,7 @@ class CreateThemesTable extends Migration
             $table->string('t_photo3');
             $table->string('t_movie');
             $table->datetime('exhibitDate');
-            $table->datetime('deadline');
+            $table->date('deadline');
             $table->timestamps();
         });
     }
