@@ -63,7 +63,6 @@ Route::post('/members', function (Request $request) {
 });
 
 Route::delete('/members/{member}', function (Member $member) {
-    //
     $member->delete();
     return redirect('/');
 });
